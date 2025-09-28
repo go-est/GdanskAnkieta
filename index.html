@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Krótka ankieta — weź udział i zgarnij 1h gratis</title>
+  <title>Krótka ankieta — weź udział i zgarnij 1h darmowego korzystania</title>
 
   <!-- Open Graph tags (podgląd FB) -->
-  <meta property="og:title" content="Weź udział w krótkiej ankiecie — zgarnij 1h gratis" />
-  <meta property="og:description" content="Pomóż nam zebrać dane do projektu ekonomii współdzielenia. Ankieta zajmuje ~2-3 min. Kod na 1h darmowego korzystania w nagrodę." />
+  <meta property="og:title" content="Weź udział w krótkiej ankiecie — zgarnij 1h darmowego korzystania" />
+  <meta property="og:description" content="Pomóż nam zebrać dane do projektu ekonomii współdzielenia. Ankieta zajmuje ~3-5 min. Po wypełnieniu otrzymasz kod na 1 godzinę darmowego korzystania po uruchomieniu projektu." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://EST.github.io/EST/" />
 
@@ -22,8 +22,10 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>Krótka ankieta — zgarnij 1 godzinę gratis</h1>
-    <p>Zbieramy dane potrzebne do realizacji projektu z obszaru ekonomii współdzielenia. Ankieta zajmuje ~2–3 minuty. Po wypełnieniu otrzymasz kod na 1 godzinę darmowego korzystania, gdy projekt wystartuje.</p>
+    <h1>Krótka ankieta — zgarnij 1 godzinę darmowego korzystania</h1>
+    <p>Zbieramy dane potrzebne do realizacji projektu z obszaru ekonomii współdzielenia. Ankieta zajmuje ~3–5 minut. Po wypełnieniu otrzymasz kod na 1 godzinę darmowego korzystania po uruchomieniu projektu.</p>
+
+    <p>Aby zapewnić <strong>losowy przydział ankiet</strong> z delikatnie różnymi zestawami pytań i zebrać pełniejsze dane, link nie prowadzi bezpośrednio do ankiety. Po kliknięciu przycisku zostaniesz przekierowany do jednej z wersji ankiety w losowy sposób.</p>
 
     <!-- START button - losuje jedną z trzech ankiet po kliknięciu -->
     <a id="startBtn" class="btn" href="#">Rozpocznij ankietę</a>
@@ -34,9 +36,9 @@
   <script>
     // Tutaj wstaw później bezpośrednie linki do swoich 3 ankiet Google Forms
     const surveys = [
-    "https://forms.gle/xh4WRJVTpPAdn4gr5", 
-    "https://forms.gle/vSY8mPPamWnbJJDX8", 
-    "https://forms.gle/eTsUSBDDhfnWY4v49"
+      "https://forms.gle/xh4WRJVTpPAdn4gr5", 
+      "https://forms.gle/vSY8mPPamWnbJJDX8", 
+      "https://forms.gle/eTsUSBDDhfnWY4v49"
     ];
 
     document.getElementById('startBtn').addEventListener('click', function (e) {
@@ -47,3 +49,4 @@
   </script>
 </body>
 </html>
+
