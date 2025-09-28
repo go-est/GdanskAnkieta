@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krótka ankieta — weź udział i zgarnij 1h gratis</title>
+
+  <!-- Open Graph tags (podgląd FB) -->
+  <meta property="og:title" content="Weź udział w krótkiej ankiecie — zgarnij 1h gratis" />
+  <meta property="og:description" content="Pomóż nam zebrać dane do projektu ekonomii współdzielenia. Ankieta zajmuje ~2-3 min. Kod na 1h darmowego korzystania w nagrodę." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://EST.github.io/EST/" />
+
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:#f7f7f7;color:#111}
+    .wrap{max-width:720px;margin:60px auto;padding:28px;background:#fff;border-radius:10px;box-shadow:0 6px 30px rgba(0,0,0,0.08)}
+    h1{margin:0 0 10px;font-size:20px}
+    p{margin:0 0 18px;line-height:1.45}
+    .btn{display:inline-block;background:#0066ff;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+    .small{font-size:13px;color:#555;margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Krótka ankieta — zgarnij 1 godzinę gratis</h1>
+    <p>Zbieramy dane potrzebne do realizacji projektu z obszaru ekonomii współdzielenia. Ankieta zajmuje ~2–3 minuty. Po wypełnieniu otrzymasz kod na 1 godzinę darmowego korzystania, gdy projekt wystartuje.</p>
+
+    <!-- START button - losuje jedną z trzech ankiet po kliknięciu -->
+    <a id="startBtn" class="btn" href="#">Rozpocznij ankietę</a>
+
+    <p class="small">Udostępnij, jeśli możesz — pomożesz nam wystartować szybciej!</p>
+  </div>
+
+  <script>
+    // Tutaj wstaw później bezpośrednie linki do swoich 3 ankiet Google Forms
+    const surveys = [
+    "https://forms.gle/xh4WRJVTpPAdn4gr5", 
+    "https://forms.gle/vSY8mPPamWnbJJDX8", 
+    "https://forms.gle/eTsUSBDDhfnWY4v49"
+    ];
+
+    document.getElementById('startBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      const idx = Math.floor(Math.random() * surveys.length);
+      window.location.href = surveys[idx];
+    });
+  </script>
+</body>
+</html>
